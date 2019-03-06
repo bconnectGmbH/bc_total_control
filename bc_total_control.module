@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * {@inheritdoc}
+ */
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function bc_total_control_page_attachments(array &$attachments) {
+  $routers = [
+    'page_manager.page_view_total_control_dashboard_total_control_dashboard-panels_variant-1',
+    'page_manager.page_view_total_control_dashboard_total_control_dashboard-panels_variant-0',
+  ];
+
+  if (in_array(\Drupal::routeMatch()->getRouteName(), $routers)) {
+    // Attach our extra CSS for bc dashboard.
+    $attachments['#attached']['library'][] = 'bc_total_control/bc';
+
+    $moduleHandler = \Drupal::service('module_handler');
+
+    if ($moduleHandler->moduleExists('masonry')) {
+      $attachments['#attached']['library'][] = 'bc_total_control/bc-masonry';
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bc_total_control_theme($existing, $type, $theme, $path) {
+  return [
+    'block__views_block__bc_google_analytics_summary_top_pages_block' => [
+      'base hook' => 'block',
+    ],
+    'block__views_block__bc_google_analytics_summary_top_sources_block' => [
+      'base hook' => 'block',
+    ],
+    'block__bc_total_control' => [
+      'base hook' => 'block',
+    ],
+    'block__total_control' => [
+      'base hook' => 'block',
+    ],
+    'block__views_block__control_content_panes_pane_tc_new' => [
+      'base hook' => 'block',
+    ],
+    'block__views_block__bc_google_analytics_summary_sessions_and_pageviews' => [
+      'base hook' => 'block',
+    ],
+    'block__bc_dashboard_user' => [
+      'base hook' => 'block',
+    ],
+  ];
+}

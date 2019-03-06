@@ -1,0 +1,7 @@
+bc_total_control_masonry:
+  label: 'b-connect total control Masonry'
+  category: 'Dashboard'
+  template: templates/bc-total-control-masonry
+  regions:
+    content:
+      label: 'Content'

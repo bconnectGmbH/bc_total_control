@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * bc total control template.
+ *
+ * Available region variables:
+ * - content
+ */
+#}
+<div class="bc-dashboard-masonry">
+  {{ attach_library('masonry/masonry.layout') }}
+  {{ title_suffix.contextual_links }}
+  {% if content.content %}
+    {{ content.content }}
+  {% endif %}
+</div>

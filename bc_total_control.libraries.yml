@@ -1,0 +1,9 @@
+bc:
+  version: 'VERSION'
+  css:
+    theme:
+      css/bc.css: {}
+bc-masonry:
+  version: 'VERSION'
+  js:
+    js/bc.js: {}

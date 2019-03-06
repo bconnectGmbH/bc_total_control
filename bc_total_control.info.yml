@@ -1,0 +1,13 @@
+name: 'b-connect Total Control Dashboard'
+type: module
+description: 'A dashboard is what is missing for better Drupal administration experience. This dashboard is built on top of Total Control Admin Dashboard module, utilizing Panels, Google Analytics Reports, and several enhanced blocks and widgets for an intuitive and flexible administration experience.'
+core: 8.x
+package: b-connect GmbH
+dependencies:
+  - total_control:total_control
+install:
+  - google_analytics_reports_api
+  - google_analytics_reports
+  - charts
+  - charts_highcharts
+  - views_bootstrap
