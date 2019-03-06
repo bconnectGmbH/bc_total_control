@@ -49,7 +49,8 @@
             "https://www.drupal.org/files/issues/2935351-2.patch"
         },
         "drupal/google_analytics_reports": {
-            "Removed the MAINTNANCE_MODE check": "patches/maintenance_mode_fix.patch"
+            "Removed the MAINTNANCE_MODE check":
+	    "https://gist.github.com/merlin-tribukait/85b0f4d62fcc405fa19cddb10d70db0d"
         }
     }
   }
