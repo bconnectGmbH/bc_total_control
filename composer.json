@@ -31,7 +31,8 @@
     "drupal/charts": "~3.0",
     "drupal/google_analytics_reports": "~3.0",
     "drupal/total_control": "~2.0",
-    "drupal/views_bootstrap": "~4.0"
+    "drupal/views_bootstrap": "~4.0",
+    "npm-asset/highcharts": "^7.0"
   },
   "extra": {
     "branch-alias": {
