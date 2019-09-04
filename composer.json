@@ -45,10 +45,6 @@
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patches": {
-        "drupal/total_control": {
-            "Issue #2935351: Fixed the issue when Enabled with multilingual of Translatable Markup for Invalid Argument Exception: $string (Array) must be a string.":
-            "https://www.drupal.org/files/issues/2935351-2.patch"
-        },
         "drupal/google_analytics_reports": {
             "Removed the MAINTNANCE_MODE check":
 	    "https://gist.githubusercontent.com/merlin-tribukait/85b0f4d62fcc405fa19cddb10d70db0d/raw/598b73f7ff42c0151efb04d63f7bb9242bf2bf0e/maintenance_mode_fix.patch"
