@@ -43,12 +43,6 @@
       "npm-asset"
     ],
     "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
-    "patches": {
-        "drupal/google_analytics_reports": {
-            "Removed the MAINTNANCE_MODE check":
-	    "https://gist.githubusercontent.com/merlin-tribukait/85b0f4d62fcc405fa19cddb10d70db0d/raw/598b73f7ff42c0151efb04d63f7bb9242bf2bf0e/maintenance_mode_fix.patch"
-        }
-    }
+    "composer-exit-on-patch-failure": true
   }
 }
